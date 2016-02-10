@@ -21,6 +21,8 @@ endif
 
 NeoBundleCheck
 
+colorscheme jellybeans
+
 let g:user_emmet_settings = {
 \	'variables': {
 \		'lang' : 'ja'
@@ -29,7 +31,8 @@ let g:user_emmet_settings = {
 \ }
 
 set number
-
+set noautoindent
+set nosmartindent
 
 set expandtab
 set tabstop=2
