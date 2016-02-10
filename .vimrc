@@ -30,19 +30,27 @@ let g:user_emmet_settings = {
 
 set number
 
-set tabstop=4
 
-"set expandtab
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
-"set mouse=a
+augroup fileTypeIndent
+  autocmd!
+  autocmd BufNewFile,BufRead *.js setlocal tabstop=4 shiftwidth=4 noexpandtab
+augroup END
 
 set clipboard=unnamed
 
-set cindent
+"set cindent
 
 set fileformat=unix
+
+set encoding=utf-8
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 
 syntax enable
 
 nnoremap <Space>n :NERDTree<Enter>
 
+filetype plugin indent on
