@@ -21,6 +21,8 @@ endif
 
 NeoBundleCheck
 
+let g:neocomplcache_enable_at_startup = 1
+
 colorscheme jellybeans
 
 let g:user_emmet_settings = {
