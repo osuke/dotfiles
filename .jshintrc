@@ -1,0 +1,7 @@
+{
+  "strict": true,
+  "quotmark": "single",
+  "camelcase": true,
+  "undef": true,
+  "browser": true
+}
