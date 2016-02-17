@@ -21,10 +21,16 @@ endif
 
 NeoBundleCheck
 
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+  \ 'active_filetypes': [],
+  \ 'passive_filetypes': ['html'] }
+let g:syntastic_javascript_checker = 'jshint'
+
+" neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
-colorscheme jellybeans
-
+" emmet
 let g:user_emmet_settings = {
 \	'variables': {
 \		'lang' : 'ja'
@@ -32,30 +38,28 @@ let g:user_emmet_settings = {
 \	'indentation': '  '
 \ }
 
+" nerdtree
+nnoremap <Space>n :NERDTree<Enter>
+
+" general
+colorscheme jellybeans
 set number
 set noautoindent
 set nosmartindent
-
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set clipboard=unnamed
 
 augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.js setlocal tabstop=4 shiftwidth=4 noexpandtab
 augroup END
 
-set clipboard=unnamed
+syntax enable
 
-"set cindent
-
-set fileformat=unix
+filetype plugin indent on
 
 set encoding=utf-8
 set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
-
-syntax enable
-
-nnoremap <Space>n :NERDTree<Enter>
-
-filetype plugin indent on
+set fileformats=unix,dos,mac
