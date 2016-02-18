@@ -1,7 +1,17 @@
 {
-  "strict": true,
   "quotmark": "single",
   "camelcase": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": true,
+  "freeze": true,
+  "futurehostile": true,
+  "latedef": true,
+  "noarg": true,
+  "nonew": true,
+  "strict": "func",
   "undef": true,
-  "browser": true
+  "unused": true,
+  "-W100": true
 }

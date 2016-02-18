@@ -25,7 +25,7 @@ NeoBundleCheck
 let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
-let g:syntastic_javascript_checker = 'jshint'
+let g:syntastic_javascript_checker = ['jshint']
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
