@@ -50,6 +50,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set clipboard=unnamed
+set noswapfile
 
 augroup fileTypeIndent
   autocmd!
